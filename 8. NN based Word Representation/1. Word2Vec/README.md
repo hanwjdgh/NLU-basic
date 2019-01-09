@@ -8,3 +8,6 @@
 
 ## 분산 표현(Distributed Represnetation)
 
+## CBOW(Continuous Bag of Words)
+
+CBOW는 주변에 있는 단어들을 가지고, 중간에 있는 단어들을 예측하는 방법
