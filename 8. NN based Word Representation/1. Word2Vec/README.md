@@ -11,3 +11,7 @@
 ## CBOW(Continuous Bag of Words)
 
 CBOW는 주변에 있는 단어들을 가지고, 중간에 있는 단어들을 예측하는 방법
+
+## Skip-Gram
+
+중간에 있는 단어로 주변 단어들을 예측하는 방법
