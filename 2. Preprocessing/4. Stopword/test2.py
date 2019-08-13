@@ -16,6 +16,7 @@ print(word_tokens)
 print(result) 
 
 """
-['Family', 'is', 'not', 'an', 'important', 'thing', '.', 'It', "'s", 'everything', '.']
-['Family', 'important', 'thing', '.', 'It', "'s", 'everything', '.']
+→ 단어 토큰화 결과 : ['Family', 'is', 'not', 'an', 'important', 'thing', '.', 'It', "'s", 'everything', '.']
+  불용어 제거 결과 : ['Family', 'important', 'thing', '.', 'It', "'s", 'everything', '.']
+  'is', 'not', 'an' 제거
 """

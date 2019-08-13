@@ -1,24 +1,21 @@
 import nltk
-from nltk.tag import pos_tag
-from nltk.tokenize import word_tokenize
-from konlpy.tag import Kkma  
+from nltk.tokenize import sent_tokenize
 
-# nltk에서 품사 분류 = pos_tag
+# 영어 문장의 토큰화 = sent_tokenize
 
-text="I am actively looking for Ph.D. students. and you are a Ph.D. student."
-x=word_tokenize(text)
-print(pos_tag(x))
+text="His barber kept his word. But keeping such a huge secret to himself was driving him crazy. Finally, the barber went up a mountain and almost to the edge of a cliff. He dug a hole in the midst of some reeds. He looked about, to mae sure no one was near."
+print(sent_tokenize(text))
 
 """
--> [('I', 'PRP'), ('am', 'VBP'), ('actively', 'RB'), ('looking', 'VBG'), ('for', 'IN'), ('Ph.D.', 'NNP'), 
-('students', 'NNS'), ('.', '.'), ('and', 'CC'), ('you', 'PRP'), ('are', 'VBP'), ('a', 'DT'), ('Ph.D.', 'NNP'), 
-('student', 'NN'), ('.', '.')]
+→ ['His barber kept his word.', 'But keeping such a huge secret to himself was driving him crazy.', 
+'Finally, the barber went up a mountain and almost to the edge of a cliff.', 'He dug a hole in the midst of some reeds.', 
+'He looked about, to mae sure no one was near.']
 """
 
-kkma=Kkma()  
-print(kkma.pos("열심히 코딩한 당신, 연휴에는 여행을 가봐요"))
+text="I am actively looking for Ph.D. students. and you are a Ph.D student."
+print(sent_tokenize(text))
 
 """
--> [('열심히', 'MAG'), ('코딩', 'NNG'), ('하', 'XSV'), ('ㄴ', 'ETD'), ('당신', 'NP'), (',', 'SP'), ('연휴', 'NNG'), 
-('에', 'JKM'), ('는', 'JX'), ('여행', 'NNG'), ('을', 'JKO'), ('가보', 'VV'), ('아요', 'EFN')]
+→ ['I am actively looking for Ph.D. students.', 'and you are a Ph.D student.']
+NLTK는 단순히 온점을 구분자로 하여 문장을 구분하지 않았기 때문에, Ph.D.를 문장 내의 단어로 인식하여 성공적으로 인식한다.
 """

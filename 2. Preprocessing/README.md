@@ -1,5 +1,7 @@
 # Text Preprocessing
 
+텍스트 전처리는 용도에 맞게 텍스트를 사전에 처리하는 작업
+
 ## 1. 토큰화 (Tokenizaton)
 
 주어진 코퍼스(corpus)에서 토큰(token)(보통 의미있는 단위)이라 불리는 단위로 나누는 작업

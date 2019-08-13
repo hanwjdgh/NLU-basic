@@ -9,6 +9,6 @@ text="Starting a home-based restaurant may be an ideal. it doesn't have a food c
 print(tokenizer.tokenize(text))
 
 """
--> ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 
+→ ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 
 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.']
 """
