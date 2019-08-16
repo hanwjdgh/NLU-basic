@@ -32,6 +32,7 @@ for i in range(num_merges):
     print(best)
 
 """
+→
 ('e', 's')
 ('es', 't')
 ('est', '</w>')
