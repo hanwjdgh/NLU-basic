@@ -6,11 +6,11 @@ x(독립변수), W(가중치), b(편향)
 
 1. 단순 선형 회귀 분석(Simple Linear Regression Analysis)
 
-    y = W<sub>x</sub> + b
+    y = W<sub>x</sub> + b  ex) test1.py
 
 2. 다중 선형 회귀 분석(Multiple Linear Regression Analysis)
 
-    y = W<sub>1x1</sub> + W<sub>2x2</sub> + ... W<sub>nxn</sub> + b
+    y = W<sub>1x1</sub> + W<sub>2x2</sub> + ... W<sub>nxn</sub> + b ex) test2.py
 
 ## 2. 가설(Hypothesis) 세우기
 
@@ -29,5 +29,3 @@ W,b → minimize cost(W,b)
 ## 4. 옵티마이저(Optimizer) : 경사하강법(Gradient Descent)
 
 선형 회귀를 포함한 수많은 머신 러닝, 딥 러닝의 학습은 결국 비용 함수를 최소화하는 매개 변수인 W와 b을 찾기 위한 작업을 수행한다. 이때 사용되는 것이 옵티마이저(Optimizer) 알고리즘이다.
-
-ex) test1.py
