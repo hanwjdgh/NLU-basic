@@ -35,7 +35,7 @@ result=[word_tokenize(sentence) for sentence in normalized_text]
 
 model = Word2Vec(sentences=result, size=100, window=5, min_count=5, workers=4, sg=0)
 
-a=model.wv.most_similar("man")
+a=model.wv.most_similar("man") # 입력한 단어에 대해서 가장 유사한 단어들을 출력
 print(a)
 
 """
